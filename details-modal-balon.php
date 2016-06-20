@@ -1,4 +1,4 @@
-<div class = "modal fade datails-1" id="details-2" tableindex="-1" role="dialog" aria-labelledby="details-1" ariana hidden="true">
+<div class = "modal fade datails-1" id="details-2" tableindex="-1" role="dialog" aria-labelledby="details-2" ariana hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -36,7 +36,7 @@
           <br/>
           <br/>
 
-          
+
           </div>
 
             </form>

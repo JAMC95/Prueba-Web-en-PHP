@@ -1,4 +1,4 @@
-<div class = "modal fade datails-1" id="details-1" tableindex="-1" role="dialog" aria-labelledby="details-1" ariana hidden="true">
+<div class = "modal fade datails-1" id="details-6" tableindex="-1" role="dialog" aria-labelledby="details-6" ariana hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -6,25 +6,25 @@
       <button class="close" type="button" data-dismiss="modal" arial-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title text-center">Levis Jeans</h4>
+        <h4 class="modal-title text-center">Sudadera</h4>
       </div>
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6">
               <div class="center-block">
-                <img src="images/levis.jpg" alt="Levis Jeans" class="details img-responsive"/>
+                <img src="images/hoodie.jpg" alt="Sudadera" class="details img-responsive"/>
               </div>
             </div>
             <div class="col-sm-6" >
               <h4>Details</h4>
               <p>
-                These Jeans are Amazing, you must try and buy then. Get then while they last
+                These Sudadera are Amazing, you must try and buy then. Get then while they last
               </p>
               <hr/>
 
-              <p>Price: $24.99</p>
-              <p>Brand:levis</p>
+              <p>Price: $7.99</p>
+              <p>Brand:sudadera</p>
 
               <form action="add_cart.php" method="post">
                 <div class="form group">
@@ -39,10 +39,10 @@
             <div class="form-group">
                 <label for="size">Size:</label>
               <select name="size" id="size" class="form-control">
-                <option value=""> </option>
-                  <option value="28">28</option>
-                    <option value="32">32</option>
-                    <option value="36">36</option>
+                    <option value=""> </option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
               </select>
             </div>
           </div>
