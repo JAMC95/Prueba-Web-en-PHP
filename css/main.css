@@ -22,31 +22,31 @@ color: #FFFFFF;
   height: 600px;
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 700px;
+  background-size: 100% 500px;
   background-position: top center;
   background-attachment: fixed;
 }
 
-#image-1{
+#image-2{
   position: absolute;
   width: 100%;
   height: 350px;
 
-    background-image: url(../images/ecomerce.jpg);
+    background-image: url(../images/ecomerce.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: auto 200px;
     top: -100px;
     left: -25px;
 }
-#image-2{
+#image-1{
   position: absolute;
   width: 100%;
   height: 300px;
 margin-left: -100px;
       background-image: url(../images/ecommerce2.png);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: bottom right;
     background-size: auto;
     top: 8%;
     margin-top: 0px;
@@ -74,5 +74,13 @@ color:#FFFFFF;
 }
 #quantity-label{
   margin-left: -16px;
+
+}
+
+img.details{
+
+  width: auto;
+  margin: 15px auto;
+  height: 200px;
 
 }
