@@ -1,5 +1,8 @@
 <?php
 require_once 'core/init.php';
+
+$sql="SELECT * FROM tbl_products where featured =1";
+$featured=$db->query($sql);
  ?>
 
 <!DOCTYPE html>
@@ -74,75 +77,18 @@ require_once 'core/init.php';
   <div class="row">
     <h2 class="text-center"> Featured Products</h2>
     <div class="col-md-3">
-      <h4>Levis Jeans</h4>
-      <img src="images/levis.jpg" alt="Levis Jeans" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $24.99</s></p>
-      <p class="price">Our Price : $19.99</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+      <?php while ($product=mysqli_fetch_assoc($featured)): ?>
+
+            <h4><?= $product['title']; ?></h4>
+      <img src="<?= $product['image']; ?>" alt="<?= $product['title']; ?>" id="images"/>
+      <p class="list-price text-danger"> List Price: <s><?= $product['list_price']; ?></s></p>
+      <p class="price">Our Price : <?= $product['price']; ?></p>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-<?= $product['featured']; ?>">Details</button>
 
     </div>
+  <?php endwhile; ?>
+</div>
 
-    <div class="col-md-3">
-      <h4>Adidas Football</h4>
-      <img src="images/adidas.png" alt="Balon adidas" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $39.99</s></p>
-      <p class="price">Our Price : $29.99</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-2">Details</button>
-
-    </div>
-
-    <div class="col-md-3">
-      <h4>Watch</h4>
-      <img src="images/reloj.jpg" alt="Relojeria" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $20.99</s></p>
-      <p class="price">Our Price : $9.99</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-3">Details</button>
-
-    </div>
-    <div class="col-md-3">
-      <h4>Polo Shirt</h4>
-      <img src="images/polo.jpg" alt="Polo" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $21.99</s></p>
-      <p class="price">Our Price : $15.00</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-4">Details</button>
-
-    </div>
-
-    <div class="col-md-3">
-      <h4>Purse</h4>
-      <img src="images/bolso.jpg" alt="Bolso" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $24.99</s></p>
-      <p class="price">Our Price : $19.99</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-5">Details</button>
-
-    </div>
-    <div class="col-md-3">
-      <h4>Hoodie</h4>
-      <img src="images/hoodie.jpg" alt="Sudadera" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $12.99</s></p>
-      <p class="price">Our Price : $7.99</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-6">Details</button>
-
-    </div>
-
-    <div class="col-md-3">
-      <h4>Head Band</h4>
-      <img src="images/headband.jpg" alt="Banda para cabeza" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $6.99</s></p>
-      <p class="price">Our Price : $3.99</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-7">Details</button>
-
-    </div>
-    <div class="col-md-3">
-      <h4>Skechers for running</h4>
-      <img src="images/zapatillas.jpg" alt="Zapatillas de deporte" id="images"/>
-      <p class="list-price text-danger"> List Price: <s> $70.99</s></p>
-      <p class="price">Our Price : $39.99</p>
-      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#details-8">Details</button>
-
-    </div>
-
-  </div>
 
 
 
