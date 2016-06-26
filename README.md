@@ -1,1 +1,1 @@
-![tienda](images/readme.png)
+La página web es muy simple. Se encarga de conectarse a la base de datos, y conseguir información acerca de los productos dentro de la base de datos y mostrarlos (en este caso solo uno, pero la web está preparada para albergar varios)
